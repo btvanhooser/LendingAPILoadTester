@@ -1,0 +1,17 @@
+﻿{
+	"id":        "{{id}}",
+	"firstname": "{{Firstname}}",
+	"lastname":  "{{Lastname}}",
+	"ssn":       {{SSN}},
+	"employer":  "{{Employer}}",
+	"income":    {{Income}},
+	"incomeFrequency": "{{IncomeFrequency}}",
+	"requestedAmount": {{Amount}},
+	"requestedTerm":   {{Term}},
+	"phoneNumber":     "{{Phone}}",
+	"emailAddress":    "{{Email}}",
+	"isBranchEmployee":"{{IsBranchEmployee}}",
+	"employeeID":      {{EmployeeID}},
+	"lendercode":      "{{Lendercode}}",
+	"status":          "{{Status}}"
+}
