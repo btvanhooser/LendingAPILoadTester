@@ -31,10 +31,11 @@ namespace LendingAPILoadTester
 
         public SmartClient(Logger log, Dictionary<string,string> iteration)
         {
+            //TODO Replace uri's
             //dev
-            uri = "http://small-scale-lending-api-btvanhooser.c9users.io:8080";
+            //uri = "http://small-scale-lending-api-btvanhooser.c9users.io:8080";
             //prod
-            //uri = "https://simple-lending-api.herokuapp.com";
+            uri = "https://simple-lending-api.herokuapp.com";
 
             DataContext = iteration;
             logger = log;

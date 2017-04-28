@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace LendingAPILoadTester.Utilities
 {
@@ -44,8 +45,7 @@ namespace LendingAPILoadTester.Utilities
             TestCaseData = new List<Dictionary<string, string>>();
 
             Application xlApp = new Application();
-            //TODO research generalized option correctly
-            Workbook xlWorkbook = xlApp.Workbooks.Open(@"c:\users\brian\documents\visual studio 2015\Projects\LendingAPILoadTester\LendingAPILoadTester\Excel\TestData.xlsx");
+            Workbook xlWorkbook = xlApp.Workbooks.Open(Path.Combine(Environment.CurrentDirectory, @"..\..\Excel\TestData.xlsx"));
             _Worksheet xlWorksheet = xlWorkbook.Sheets[testname];
             Range xlRange = xlWorksheet.UsedRange;
 

@@ -8,7 +8,6 @@ namespace LendingAPILoadTester
     [TestClass]
     public class SubmitApplicationLoadTest
     {
-        //TODO determine how many load tests should be written per action
         [TestMethod]
         public void SubmitApplication()
         {
